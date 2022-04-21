@@ -9,25 +9,28 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to Cardless Banking! Press the 'Start FaceID' Button to begin a transaction at any ATM"
-        android:textSize="50sp"
-        android:textStyle="bold"
+        android:text="@+string/Welcome_to_the_smart_banking_scan_your_face_to_proceed."
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.053" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/first_activity_button"
-        android:layout_width="0dp"
+    <EditText
+        android:id="@+id/transaction_process"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="Start FaceID"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:text="@+id/Select_amount"
+        android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="590dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/transaction_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/transaction_amount"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transaction_process" >
 
 </androidx.constraintlayout.widget.ConstraintLayout>
