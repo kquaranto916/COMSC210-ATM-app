@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account2">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="268dp"
+            android:layout_height="125dp"
+            android:text="Welcome Kimberly Quaranto!"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.056" />
+
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="146dp"
+            android:src="@drawable/profile"
+            app:layout_constraintTop_toRightOf="@+id/name"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="268dp"
+            tools:layout_editor_absoluteY="5dp" />
+
+
+        <TextView
+            android:id="@+id/instructions"
+            android:layout_width="433dp"
+            android:layout_height="165dp"
+            android:text="Please Select the Card You Would Like to Use. Once you select the card, Please hold your phone one the card reader"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.28" />
+
+        <ImageButton
+            android:id="@+id/cardButton"
+            android:layout_width="403dp"
+            android:layout_height="299dp"
+            android:layout_marginTop="100dp"
+            android:background="@color/white"
+            android:onClick="addOperation"
+            android:scaleType="fitCenter"
+            android:src="@drawable/creditcard1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.424" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
